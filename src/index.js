@@ -24,12 +24,12 @@ module.exports = function check(str, bracketsConfig) {
       d = d + a1[i]
     }
     for(let i = 0; i < b2.length/2;i++){
-      e = e + a1[i]
+      e = e + b2[i]
     }
     for(let i = b2.length/2; i < b2.length;i++){
-      f = f + a1[i]
+      f = f + b2[i]
     }
-    if(c-d == e - f){
+    if(2*(c-d)/a1.length == 2*(e-f)/b2.length){
       return true
     }else{
       return false
